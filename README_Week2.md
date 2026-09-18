@@ -98,7 +98,7 @@ nslookup networkwalks.com
 curl -I https://networkwalks.com
 ```
 
-![whatweb, nslookup and curl output for networkwalks.com](whatweb nslookup curl.png)
+![whatweb, nslookup and curl output for networkwalks.com] (whatweb nslookup curl.png)
 *whatweb identifying Apache, WordPress 7.1, WordPress Download Manager 3.3.58, and jQuery 3.7.1; nslookup resolving the domain to `192.232.216.135`; curl returning `HTTP/2 200` with WordPress REST API and caching headers exposed.*
 
 **Findings:**
