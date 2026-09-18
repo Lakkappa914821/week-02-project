@@ -117,7 +117,7 @@ curl -I https://networkwalks.com
 
 **Command:** `wafw00f networkwalks.com`
 
-![wafw00f detecting a WAF in front of networkwalks.com](screenshots/03-wafw00f-waf-detection.png)
+![wafw00f detecting a WAF in front of networkwalks.com](web firewall.png)
 *wafw00f identifying that `https://networkwalks.com` is protected by **ModSecurity (SpiderLabs)**, using only 2 requests.*
 
 **Finding:** the site sits behind a **ModSecurity (SpiderLabs)** Web Application Firewall.
