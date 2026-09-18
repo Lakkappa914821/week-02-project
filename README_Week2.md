@@ -69,7 +69,7 @@ Six Kali Linux tools were used to build a complete external profile of `networkw
 
 Queried the public domain registration record to identify the registrar, registration/expiry dates, and authoritative name servers.
 
-![whois output for networkwalks.com](screenshots/01-whois-networkwalks.png)
+![whois output for networkwalks.com](whois.png)
 *whois showing registrar GoDaddy.com LLC, domain created 2019-11-06, expiring 2027-11-06, and name servers pointing to `ns6135.hostgator.com` / `ns6136.hostgator.com`.*
 
 **Findings:**
