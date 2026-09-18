@@ -98,7 +98,7 @@ nslookup networkwalks.com
 curl -I https://networkwalks.com
 ```
 
-![whatweb, nslookup and curl output for networkwalks.com](screenshots/02-whatweb-nslookup-curl.png)
+![whatweb, nslookup and curl output for networkwalks.com](whatweb nslookup curl.png)
 *whatweb identifying Apache, WordPress 7.1, WordPress Download Manager 3.3.58, and jQuery 3.7.1; nslookup resolving the domain to `192.232.216.135`; curl returning `HTTP/2 200` with WordPress REST API and caching headers exposed.*
 
 **Findings:**
@@ -130,7 +130,7 @@ curl -I https://networkwalks.com
 
 **Command:** `dnsrecon -d networkwalks.com`
 
-![dnsrecon enumerating DNS records for networkwalks.com](screenshots/04-dnsrecon-dns-enumeration.png)
+![dnsrecon enumerating DNS records for networkwalks.com](dns recon.png)
 *dnsrecon enumerating SOA, NS, MX, TXT (SPF + Google site-verification), and SRV records — 16 records found in total, including cPanel autodiscover service records.*
 
 **Findings:**
@@ -179,7 +179,7 @@ This is the exact kind of profile an attacker builds *before* ever touching the 
 
 **Target:** `10.221.30.0/24` &nbsp;|&nbsp; **Profile:** Ping scan &nbsp;|&nbsp; **Command:** `nmap -sn 10.221.30.0/24`
 
-![Zenmap Nmap Output tab showing the ping scan result](screenshots/05-zenmap-nmap-output.png)
+![Zenmap Nmap Output tab showing the ping scan result](nmap 1.png)
 *Nmap Output — scan of 256 IP addresses in the `10.221.30.0/24` range completed in 12.20 seconds, reporting **1 host up**: `10.221.30.116`.*
 
 **Result:**
@@ -195,7 +195,7 @@ Nmap done: 256 IP addresses (1 host up) scanned in 12.20 seconds
 
 Switching to the **Topology** tab visualizes every host Zenmap has discovered in the current session (including hosts found in earlier scans on other lab subnets), fanned out from `localhost` at the center.
 
-![Zenmap Topology tab showing discovered hosts](screenshots/06-zenmap-topology.png)
+![Zenmap Topology tab showing discovered hosts](nmap 2.png)
 *Topology view — `localhost` connected to `10.221.30.116` (this scan's live host), plus `10.0.0.1` and `10.0.0.254`, retained in the same Zenmap session from earlier scanning activity on the lab's other subnet.*
 
 ## 📊 Module 2 Findings
